@@ -3,12 +3,17 @@ from django.contrib.admin import TabularInline
 
 from breaks.models import organizations, groups, replacements, dicts, breaks
 
-
+######################
+# IN LINES
+######################
 class ReplacementEmployeeInline(TabularInline):
     model = replacements.ReplacementEmployee
     fields = ('employee', 'status',)
 
 
+######################
+# MODEL ADMIN
+######################
 @admin.register(organizations.Organization)
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'director')
