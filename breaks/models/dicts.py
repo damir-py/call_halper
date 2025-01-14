@@ -8,6 +8,7 @@ class ReplacementStatus(BaseDictModelMixin):
         verbose_name = 'shift status'
         verbose_name_plural = 'shift statuses'
 
+
 class BreakStatus(BaseDictModelMixin):
     class Meta:
         verbose_name = 'lunch status'
